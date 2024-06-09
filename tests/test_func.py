@@ -1,4 +1,4 @@
-from src.func import get_data, sort_data, transform_date, mask_data
+from src.func import get_data, sort_data, transform_date, mask_data, print_data
 
 
 #def test_get_data():
@@ -31,3 +31,10 @@ def test_mask_data():
     assert mask_data(None) == ""
     assert mask_data('Счет 90424923579946435907') == 'Счет XXXXXXXXXXXXXXXX5907'
     assert mask_data('Visa Classic 2842878893689012') == 'Visa Classic XXXX XX88 9368 XXXX'
+
+
+def test_print_data():
+    assert (print_data({'id': 863064926, 'state': 'EXECUTED', 'date': '2019-12-08T22:46:21.935582', 'operationAmount': {'amount': '41096.24', 'currency': {'name': 'USD', 'code': 'USD'}}, 'description': 'Открытие вклада', 'to': 'Счет 90424923579946435907'}, '08.12.2019', '', 'Счет XXXXXXXXXXXXXXXX5907') ==
+            f"08.12.2019 Открытие вклада"
+            f" => Счет XXXXXXXXXXXXXXXX5907"
+            f"41096.24 USD")

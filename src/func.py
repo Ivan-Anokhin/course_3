@@ -30,4 +30,6 @@ def mask_data(bank_number):
 
 
 def print_data(data, date, from_, to_):
-    print(f"{date} {data.get('description')}\n{from_} => {to_}\n{data.get('operationAmount')['amount']}{data.get('operationAmount')['currency']['name']}\n")
+    return (f"{date} {data.get('description')}\n"
+          f"{from_} => {to_}\n"
+          f"{data.get('operationAmount')['amount']} {data.get('operationAmount')['currency']['name']}\n")
