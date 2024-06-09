@@ -1,22 +1,11 @@
 from src.func import get_data, sort_data, transform_date, mask_data, print_data
 
 
-#def test_get_data():
-#    assert get_data([{
-#    "id": 441945886,
-#    "state": "EXECUTED",
-#    "date": "2019-08-26T10:50:58.294041",
-#   "operationAmount": {
-#      "amount": "31957.58",
-#      "currency": {
-#        "name": "руб.",
-#        "code": "RUB"
-#     }
-#    },
-#    "description": "Перевод организации",
-#    "from": "Maestro 1596837868705199",
-#    "to": "Счет 64686473678894779589"
-#  }]) == [{'id': 441945886, 'state': 'EXECUTED', 'date': '2019-08-26T10:50:58.294041', 'operationAmount': {'amount': '31957.58', 'currency': {'name': 'руб.', 'code': 'RUB'}}, 'description': 'Перевод организации', 'from': 'Maestro 1596837868705199', 'to': 'Счет 64686473678894779589'}]
+def test_get_data():
+    test_path = 'tests/test_operations.json'
+    test_data = get_data(test_path)
+    print(test_data)
+    assert test_data == [{'id': 441945886, 'state': 'EXECUTED', 'date': '2019-08-26T10:50:58.294041', 'operationAmount': {'amount': '31957.58', 'currency': {'name': 'руб.', 'code': 'RUB'}}, 'description': 'Перевод организации', 'from': 'Maestro 1596837868705199', 'to': 'Счет 64686473678894779589'}]
 
 
 def test_sort_data():

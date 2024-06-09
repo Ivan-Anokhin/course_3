@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1fa6157a-0727-4bec-8e2b-7378a21b1536" name="Changes" comment="test">
+    <list default="true" id="1fa6157a-0727-4bec-8e2b-7378a21b1536" name="Changes" comment="add docstrings and coments">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/func.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/func.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_func.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_func.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_operations.json" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_operations.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,7 +211,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717927113067</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add docstrings and coments">
+      <option name="closed" value="true" />
+      <created>1717930579458</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1717930579458</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -273,7 +283,8 @@
     <MESSAGE value="add print_data test ond other" />
     <MESSAGE value="add test_print_data" />
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="add docstrings and coments" />
+    <option name="LAST_COMMIT_MESSAGE" value="add docstrings and coments" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
 </project>
