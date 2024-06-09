@@ -31,11 +31,3 @@ def mask_data(bank_number):
     elif len(bank_number) == 25:
         return bank_number[:5] + 'XXXXXXXXXXXXXXXX' + bank_number[-4:]
     return bank_number[:-16]+'XXXX XX'+bank_number[-10:-8]+' '+bank_number[-8:-4]+' XXXX'
-
-
-def print_data(data, date, from_, to_):
-    """"Возвращает данные об операции в нужном формате для печати."""
-    return (f"{date} {data.get('description')}\n"
-            f"{from_} => {to_}\n"
-            f"{data.get('operationAmount')['amount']} "
-            f"{data.get('operationAmount')['currency']['name']}\n")
