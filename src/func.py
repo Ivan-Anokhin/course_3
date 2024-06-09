@@ -12,6 +12,7 @@ def sort_data(data):
     for i in data:
         if i.get('state') == 'EXECUTED':
             alt_data.append(i)
+    alt_data.sort(key=lambda x: x.get('date'), reverse=1)
     return alt_data
 
 
@@ -26,3 +27,7 @@ def mask_data(bank_number):
     elif len(bank_number) == 25:
         return bank_number[:5] + 'XXXXXXXXXXXXXXXX' + bank_number[-4:]
     return bank_number[:-16]+'XXXX XX'+bank_number[-10:-8]+' '+bank_number[-8:-4]+' XXXX'
+
+
+def print_data(data, date, from_, to_):
+    print(f"{date} {data.get('description')}\n{from_} => {to_}\n{data.get('operationAmount')['amount']}{data.get('operationAmount')['currency']['name']}\n")
