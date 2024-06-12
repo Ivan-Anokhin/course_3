@@ -1,7 +1,7 @@
 import json
 
 
-def get_data(file_='../operations.json'):
+def get_data(file_='operations.json'):
     """Читает и возвращает список данных из файла operations.json."""
     with open(file_, 'r', encoding='utf-8') as file:
         data = json.load(file)
